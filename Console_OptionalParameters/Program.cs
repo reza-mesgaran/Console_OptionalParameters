@@ -13,11 +13,12 @@ namespace Console_Method
             sum(30);   // x=30 ; y=5 ; z=10
             sum(30, 1);  // x=30 ; y=1 ; z=10
             sum(30, 1, 2);  // x=30 ; y=1 ; z=2
+            sum(z: 15, x: 2, y: 3);        // <===== use the parameter names to provide the arguments (Named Arguments)
             Console.ReadKey();
         }
         static void sum(int x, int y = 5, int z = 10)
         {
-            Console.WriteLine(x + y + z);
+            Console.WriteLine(x + y + z);            
         }
     }
 }
